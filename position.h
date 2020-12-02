@@ -1,10 +1,21 @@
 #ifndef POSITION_H
 #define POSITION_H
 
+/**
+* Classe qui represente une position (x,y) dans le plan.
+*/
+
 class position
 {
 public:
+    /**
+    * Constructeur.
+    * Initialise les donnees de la position avec celles passees en paramentre.
+    */
     position(double x, double y);
+    /**
+    * Destructeur virtuel.
+    */
     virtual ~position();
     /**
     * Methode qui retourne d_x

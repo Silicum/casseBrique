@@ -23,19 +23,19 @@ public:
     */
     virtual ~afficheJeu();
     /**
-    * Methode virtuelle pure. Affiche le terrain en parametre, c-a-d l' espace du jeu et les murs.
+    * Affiche le terrain en parametre, c-a-d l' espace du jeu et les murs.
     */
     virtual void afficheTerrain(const terrain& t) const = 0;
     /**
-    * Methode virtuelle pure. Affiche la balle en parametre.
+    * Affiche la balle en parametre.
     */
     virtual void afficheBalle(const balle& b) const = 0;
     /**
-    * Methode virtuelle pure. Affiche le brique en parametre.
+    * Affiche le brique en parametre.
     */
     virtual void afficheBrique(const brique& br) const = 0;
     /**
-    * Methode virtuelle pure. Affiche la raquette en parametre.
+    * Affiche la raquette en parametre.
     */
     virtual void afficheRaquette(const raquette& raq) const = 0;
 };

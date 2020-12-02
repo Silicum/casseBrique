@@ -4,9 +4,7 @@ rectangle::rectangle(double x, double y, double larg, double haut): position{x,y
 {}
 
 rectangle::~rectangle()
-{
-
-}
+{}
 
 double rectangle::largeur() const
 {

@@ -1,3 +1,5 @@
+#ifndef DOXYGEN_SHOULD_SKIP_THIS
+
 #ifndef __GRAPHICS_H__
 #define __GRAPHICS_H__
 
@@ -7,28 +9,28 @@
 
 #ifndef __COLORS
 #define __COLORS
-enum colors { 
-    BLACK, BLUE, GREEN, CYAN, RED, MAGENTA, BROWN, LIGHTGRAY, DARKGRAY, 
+enum colors {
+    BLACK, BLUE, GREEN, CYAN, RED, MAGENTA, BROWN, LIGHTGRAY, DARKGRAY,
     LIGHTBLUE, LIGHTGREEN, LIGHTCYAN, LIGHTRED, LIGHTMAGENTA, YELLOW, WHITE
 };
 #endif
 
-enum write_modes { 
-    COPY_PUT, XOR_PUT, OR_PUT, AND_PUT, NOT_PUT 
+enum write_modes {
+    COPY_PUT, XOR_PUT, OR_PUT, AND_PUT, NOT_PUT
 };
-enum line_styles { 
+enum line_styles {
     SOLID_LINE, DOTTED_LINE, CENTER_LINE, DASHED_LINE, USERBIT_LINE
 };
-enum fill_styles { 
+enum fill_styles {
     EMPTY_FILL, SOLID_FILL, LINE_FILL, LTSLASH_FILL, SLASH_FILL, BKSLASH_FILL,
-    LTBKSLASH_FILL, HATCH_FILL, XHATCH_FILL, INTERLEAVE_FILL, WIDE_DOT_FILL, 
+    LTBKSLASH_FILL, HATCH_FILL, XHATCH_FILL, INTERLEAVE_FILL, WIDE_DOT_FILL,
     CLOSE_DOT_FILL, USER_FILL
 };
-enum text_directions { 
+enum text_directions {
     HORIZ_DIR, VERT_DIR
 };
-enum font_types { 
-    DEFAULT_FONT, TRIPLEX_FONT, SMALL_FONT, SANSSERIF_FONT, GOTHIC_FONT 
+enum font_types {
+    DEFAULT_FONT, TRIPLEX_FONT, SMALL_FONT, SANSSERIF_FONT, GOTHIC_FONT
 };
 
 #define LEFT_TEXT					0
@@ -44,7 +46,7 @@ enum font_types {
 #define CENTRELINE_LENGTH				4
 
 #define USER_CHAR_SIZE					0
-#define MAXCOLORS					15 
+#define MAXCOLORS					15
 
 #define CLIP_ON						1
 #define CLIP_OFF					0
@@ -155,8 +157,8 @@ typedef struct palettetype {
 } palettetype;
 
 typedef struct textsettingstype {
-    int font;	
-    int direction;  
+    int font;
+    int direction;
     int charsize;
     int horiz;
     int vert;
@@ -171,7 +173,7 @@ typedef struct viewporttype {
 } viewporttype;
 
 
-#if defined(__cplusplus) 
+#if defined(__cplusplus)
 extern "C" {
 #endif
 
@@ -182,7 +184,7 @@ extern "C" {
 extern int bgiemu_handle_redraw;
 
 //
-// Default mode choosed by WinBGI if DETECT value is specified for 
+// Default mode choosed by WinBGI if DETECT value is specified for
 // device parameter of initgraoh(). Default value is VGAMAX which
 // cause creation of maximized window (resolution depends on display mode)
 //
@@ -280,7 +282,7 @@ void restorecrtmode (void);
 
 void opengraph (void);
 void opengraphsize (int width,int height);
-int keypressed (void);	
+int keypressed (void);
 
 int buttonhit (void);
 void getmouse (int& x,int& y);
@@ -288,7 +290,7 @@ int buttonpressed (void);
 void waituntilkeypressed();
 void waituntilbuttonpressed();
 
-#if defined(__cplusplus) 
+#if defined(__cplusplus)
 }
 #endif
 
@@ -296,3 +298,5 @@ void waituntilbuttonpressed();
 
 
 #endif
+
+#endif /* DOXYGEN_SHOULD_SKIP_THIS */

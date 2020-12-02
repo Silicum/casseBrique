@@ -5,7 +5,7 @@
 
 /**
 * Classe d' affichage.
-* Basee sur la classe abstraite 'afficheJeu'. Les methodes utilise wingbi pour l'affichage graphique.
+* Basee sur la classe abstraite 'afficheJeu'. Les methodes utilisent wingbi pour l'affichage graphique.
 */
 
 class affichageWingbi: public afficheJeu

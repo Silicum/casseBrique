@@ -4,7 +4,7 @@
 
 /**
 * Classe pour l' objet balle.
-* Elle contient les donnees d' une balle, herite de la classe position et contient la methode qui l' avance en fonction de sa vitesse.
+* Elle contient les donnees d' une balle, herite de la classe position et contient la methode qui l' avance en fonction de sa vitesse et son angle de deplacement.
 */
 
 class balle: public position
@@ -16,19 +16,23 @@ public:
     */
     balle(double x, double y, double vit, double r, double angle);
     /**
-    * Methode qui retourne d_vit
+    * Destructeur.
+    */
+    virtual ~balle();
+    /**
+    * Methode qui retourne d_vit.
     */
     double vitesse() const;
     /**
-    * Methode qui retourne d_r
+    * Methode qui retourne d_r.
     */
     double rayon() const;
     /**
-    * Methode qui retourne d_angle
+    * Methode qui retourne d_angle.
     */
     double angle() const;
     /**
-    * Methode qui change la position (d_x,d_y) de la balle en fonction de sa vitesse (d_vit) et son angle (d_angle)
+    * Methode qui change la position (d_x,d_y) de la balle en fonction de sa vitesse (d_vit) et son angle (d_angle).
     */
     void avancer();
 private:
