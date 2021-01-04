@@ -3,31 +3,31 @@
 #include "position.h"
 
 /**
-* Classe qui represente un rectangle dans le plan avec une position (x,y).
+* Classe qui represente un rectangle dans le plan.
 */
 
-class rectangle: public position
+class rectangle
 {
 public:
     /**
     * Constructeur.
     * Initialise les donnees du rectangle avec celles passees en paramentre.
     */
-    rectangle(double x, double y, double larg, double haut);
+    rectangle(double x1, double y1, double x2, double y2);
     /**
     * Destructeur.
     */
     virtual ~rectangle();
     /**
-    * Methode qui retourne d_larg
+    * Methode qui retourne le point haut-gauche
     */
-    double largeur() const;
+    position pointHG() const;
     /**
-    * Methode qui retourne d_haut
+    * Methode qui retourne le point bas-droite
     */
-    double hauteur() const;
+    position pointBD() const;
 private:
-    double d_larg; /**< Largeur du rectangle */
-    double d_haut; /**< Hauteur du rectangle */
+    position d_HG; /**< Position du point haut-gauche */
+    position d_BD; /**< Position du point bas-droite */
 };
 #endif // RECTANGLE_H

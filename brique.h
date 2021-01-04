@@ -14,7 +14,7 @@ public:
     * Constructeur.
     * Initialise les donnees de la brique avec celles passees en paramentre.
     */
-    brique(double x, double y, double larg, double haut, int nbCol, int type);
+    brique(double x1, double y1, double x2, double y2, int nbCol, int type);
     /**
     * Destructeur.
     */

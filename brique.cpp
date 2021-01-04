@@ -6,7 +6,7 @@ FAUT TESTER
 
 ******/
 
-brique::brique(double x, double y, double larg, double haut, int nbCol, int type): rectangle{x,y,larg,haut}, d_nbCol{nbCol}, d_type{type}
+brique::brique(double x1, double y1, double x2, double y2, int nbCol, int type): rectangle{x1,y1,x2,y2}, d_nbCol{nbCol}, d_type{type}
 {}
 
 brique::~brique()

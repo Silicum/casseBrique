@@ -15,7 +15,7 @@ public:
     * Constructeur.
     * Initialise les donnees de la raquette avec celles passees en paramentre.
     */
-    raquette(double x, double y, double larg, double haut);
+    raquette(double x1, double y1, double x2, double y2);
     /**
     * Destructeur.
     */

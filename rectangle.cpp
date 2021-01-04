@@ -1,17 +1,17 @@
 #include "rectangle.h"
 
-rectangle::rectangle(double x, double y, double larg, double haut): position{x,y}, d_larg{larg}, d_haut{haut}
+rectangle::rectangle(double x1, double y1, double x2, double y2): d_HG{x1,y1}, d_BD{x2,y2}
 {}
 
 rectangle::~rectangle()
 {}
 
-double rectangle::largeur() const
+double rectangle::pointHG() const
 {
-    return d_larg;
+    return d_HG;
 }
 
-double rectangle::hauteur() const
+double rectangle::pointBD() const
 {
-    return d_haut;
+    return d_BD;
 }
