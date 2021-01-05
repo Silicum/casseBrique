@@ -6,12 +6,12 @@ rectangle::rectangle(double x1, double y1, double x2, double y2): d_HG{x1,y1}, d
 rectangle::~rectangle()
 {}
 
-double rectangle::pointHG() const
+position rectangle::pointHG() const
 {
     return d_HG;
 }
 
-double rectangle::pointBD() const
+position rectangle::pointBD() const
 {
     return d_BD;
 }

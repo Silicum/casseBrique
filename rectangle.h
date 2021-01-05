@@ -26,7 +26,7 @@ public:
     * Methode qui retourne le point bas-droite
     */
     position pointBD() const;
-private:
+protected:
     position d_HG; /**< Position du point haut-gauche */
     position d_BD; /**< Position du point bas-droite */
 };
