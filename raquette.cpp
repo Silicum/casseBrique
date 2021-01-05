@@ -11,10 +11,12 @@ void raquette::deplacer()
 {
   if(GetAsyncKeyState(VK_LEFT))
   {
-    d_x -= 10;
+    d_HG.d_x -= 10;
+    d_BD.d_x -= 10;
   }
-  else if(GetAsyncKeyState(VK_RIGHT))
+  if(GetAsyncKeyState(VK_RIGHT))
   {
-    d_y += 10;
+    d_HG.d_x += 10;
+    d_BD.d_x += 10;
   }
 }
