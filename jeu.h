@@ -6,7 +6,7 @@
 #include "brique.h"
 #include "terrain.h"
 #include "raquette.h"
-#include "afficheJeu.h"
+#include "affichageWingbi.h"
 
 /**
 * Classe pour la gestion du jeu.
@@ -59,5 +59,6 @@ private:
     std::vector<brique> d_briques; /**< Le groupe de briques */
     raquette d_raq; /**< La raquette */
     balle d_b; /**< La balle */
+    affichageWingbi d_aff;
 };
 #endif // JEU_H

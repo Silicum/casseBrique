@@ -1,4 +1,5 @@
 #include "jeu.h"
+#include <random>
 
 /******
 
@@ -16,7 +17,7 @@ void jeu::initBriques()
 
 void jeu::avancerBalle()
 {
-
+    d_b.avancer();
 }
 
 void jeu::rebondBrique(brique& b)
@@ -36,12 +37,12 @@ void jeu::rebondRaquette()
 
 void jeu::deplacerRaquette()
 {
-
+    d_raq.deplacer();
 }
 
 bool jeu::briqueDetruit(const brique &br)
 {
-
+    return br.nbColisions() == 0;
 }
 
 void jeu::loopJeu(const afficheJeu& aff)
