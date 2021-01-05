@@ -1,6 +1,7 @@
 #ifndef POSITION_H
 #define POSITION_H
 
+
 /**
 * Classe qui represente une position (x,y) dans le plan.
 */
@@ -25,6 +26,8 @@ public:
     * Methode qui retourne d_y
     */
     double posY() const;
+
+    friend class raquette;
 
 protected:
     double d_x; /**< Coordonee x */
