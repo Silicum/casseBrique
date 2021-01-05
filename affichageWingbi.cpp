@@ -41,10 +41,13 @@ void affichageWingbi::afficheBrique(const brique& br) const
     int border_color = WHITE;
     rectangle(br.pointHG().posX(),br.pointHG().posY(),br.pointBD().posX(),br.pointBD().posY());
     setfillstyle(SOLID_FILL, br.typeBrique());
-    floodfill(br.pointHG().posX() + 10, br.pointHG().posy() + 10, border_color)
+    floodfill(br.pointHG().posX() + 10, br.pointHG().posY() + 10, border_color);
 }
 
 void affichageWingbi::afficheRaquette(const raquette& raq) const
 {
-
+    int border_color = WHITE;
+    rectangle(raq.pointHG().posX(),raq.pointHG().posY(),raq.pointBD().posX(),raq.pointBD().posY());
+    setfillstyle(SOLID_FILL, GREEN);
+    floodfill(raq.pointHG().posX() + 10, raq.pointHG().posY() + 10, border_color);
 }
