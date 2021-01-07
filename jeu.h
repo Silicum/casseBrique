@@ -18,45 +18,62 @@ class jeu
 {
 public:
     /**
-    * Constructeur.
+    * Constructeur par defaut.
     */
     jeu();
     /**
-    * Methode qui initialise les briques dans d_briques.
+    * Methode qui initialise les briques dans d_briques aleatoirement.
     */
     void initBriques();
     /**
-    * Methode qui fait avancer la balle.
+    * Methode qui calcule et stocke la position en Y du brique le plus bas dans d_lowestBrique.
     */
-    void avancerBalle();
+    void briquePlusBas();
     /**
-    * Methode qui change la direction (d_angle) de la balle si collision avec la brique en parametre est detectee
+    * Methode qui change la direction (d_angle) de la balle si collision verticale avec la brique en parametre est detectee, retourne FALSE si la brique est tueuse et la balle est detruite.
     */
-    void rebondBrique(brique& b);
+    bool rebondBriqueVertical(brique& b);
     /**
-    * Methode qui change la direction (d_angle) de la balle si collision avec les murs du terrain est detectee
+    * Methode qui change la direction (d_angle) de la balle si collision horizontale avec la brique en parametre est detectee, retourne FALSE si la brique est tueuse et la balle est detruite.
     */
-    void rebondTerrain();
+    bool rebondBriqueHorizontal(brique& b);
     /**
-    * Methode qui change la direction (d_angle) de la balle si collision avec la raquette est detectee
+    * Methode qui change la direction (d_angle) de la balle si collision avec un mur droite ou gauche est detectee.
+    */
+    void rebondMurDG();
+    /**
+    * Methode qui change la direction (d_angle) de la balle si collision avec le mur en haut est detectee.
+    */
+    void rebondMurHaut();
+    /**
+    * Methode qui change la direction (d_angle) de la balle si collision avec la raquette est detectee.
     */
     void rebondRaquette();
+    /**
+    * Methode qui effectue la detection des collisions et les rebonds. Elle retourne FALSE si la balle est detruite ou si elle sort du terrain.
+    */
+    bool collision();
+    /**
+    * Methode qui retourne TRUE si la raquette a arrive au mur droit.
+    */
+    bool raquetteLimiteDroite();
+    /**
+    * Methode qui retourne TRUE si la raquette a arrive au mur gauche.
+    */
+    bool raquetteLimiteGauche();
     /**
     * Methode qui change la position de la raquette en fonction des touches de l' utilisateur.
     */
     void deplacerRaquette();
     /**
-    * Methode qui teste le nombre des collisions dans une brique et retourne TRUE si il est 0.
-    */
-    bool briqueDetruit(const brique &br);
-    /**
     * Methode qui utilise les autres methodes de cette classe et les methodes d' affichage de la classe en parametre pour simuler le jeu.
     */
-    void loopJeu(const afficheJeu& aff);
+    void loopJeu();
 
 private:
     terrain d_ter; /**< Le terrain du jeu */
     std::vector<brique> d_briques; /**< Le groupe de briques */
+    double d_lowestBrique; /**< Coordonee Y de la brique la plus bas */
     raquette d_raq; /**< La raquette */
     balle d_b; /**< La balle */
     affichageWingbi d_aff;

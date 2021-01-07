@@ -30,8 +30,10 @@ public:
 
     static const int NORMAL = 0; /**< Constante, valeur 0 correspond a une brique de type NORMAL. */
     static const int DURE = 1; /**< Constante, valeur 1 correspond a une brique de type DURE. */
-    static const int MOLLE = 2; /**< Constante, valeur 2 correspond a une brique de type MOLLE. */
-    static const int TUEUSE = 3; /**< Constante, valeur 3 correspond a une brique de type TUEUSE. */
+    static const int MOLLE = 3; /**< Constante, valeur 2 correspond a une brique de type MOLLE. */
+    static const int TUEUSE = 2; /**< Constante, valeur 3 correspond a une brique de type TUEUSE. */
+
+    friend class jeu;
 
 private:
     int d_nbCol; /**< Nombre de collisions avant etre detruite. */

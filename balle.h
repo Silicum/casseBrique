@@ -35,6 +35,8 @@ public:
     * Methode qui change la position (d_x,d_y) de la balle en fonction de sa vitesse (d_vit) et son angle (d_angle).
     */
     void avancer();
+
+    friend class jeu;
 private:
     double d_vit; /**< Vitesse de la balle */
     double d_r; /**< Rayon de la balle */

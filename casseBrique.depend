@@ -1,0 +1,130 @@
+# depslib dependency file v1.0
+1606239060 source:c:\users\simon\desktop\code blocks respository\cassebrique\affichejeu.cpp
+	"afficheJeu.h"
+
+1609858314 c:\users\simon\desktop\code blocks respository\cassebrique\affichejeu.h
+	"terrain.h"
+	"balle.h"
+	"brique.h"
+	"raquette.h"
+	<vector>
+
+1606919758 c:\users\simon\desktop\code blocks respository\cassebrique\terrain.h
+
+1609937458 c:\users\simon\desktop\code blocks respository\cassebrique\balle.h
+	"position.h"
+
+1609845589 c:\users\simon\desktop\code blocks respository\cassebrique\position.h
+
+1609942254 c:\users\simon\desktop\code blocks respository\cassebrique\brique.h
+	"rectangle.h"
+
+1609845495 c:\users\simon\desktop\code blocks respository\cassebrique\rectangle.h
+	"position.h"
+
+1609930572 c:\users\simon\desktop\code blocks respository\cassebrique\raquette.h
+	"rectangle.h"
+
+1606916759 source:c:\users\simon\desktop\code blocks respository\cassebrique\balle.cpp
+	"balle.h"
+	<cmath>
+
+1609964439 source:c:\users\simon\desktop\code blocks respository\cassebrique\brique.cpp
+	"brique.h"
+
+1609967954 source:c:\users\simon\desktop\code blocks respository\cassebrique\jeu.cpp
+	"jeu.h"
+	<random>
+	"graphics.h"
+	<iostream>
+	<ctime>
+
+1610042094 c:\users\simon\desktop\code blocks respository\cassebrique\jeu.h
+	<vector>
+	"balle.h"
+	"brique.h"
+	"terrain.h"
+	"raquette.h"
+	"affichageWingbi.h"
+
+1609869779 source:c:\users\simon\desktop\code blocks respository\cassebrique\main.cpp
+	<iostream>
+	"jeu.h"
+	<windows.h>
+
+1606921727 c:\users\simon\desktop\code blocks respository\cassebrique\graphics.h
+
+1606831878 source:c:\users\simon\desktop\code blocks respository\cassebrique\position.cpp
+	"position.h"
+
+1606830001 source:c:\users\simon\desktop\code blocks respository\cassebrique\terrain.cpp
+	"terrain.h"
+
+1606921727 source:c:\users\simon\desktop\code blocks respository\cassebrique\winbgi.cpp
+	<windows.h>
+	<stddef.h>
+	<stdio.h>
+	<math.h>
+	"graphics.h"
+
+1609845448 source:c:\users\simon\desktop\code blocks respository\cassebrique\rectangle.cpp
+	"rectangle.h"
+
+1609859677 source:c:\users\simon\desktop\code blocks respository\cassebrique\affichagewingbi.cpp
+	"affichageWingbi.h"
+	"graphics.h"
+	"winuser.h"
+
+1609858314 c:\users\simon\desktop\code blocks respository\cassebrique\affichagewingbi.h
+	"afficheJeu.h"
+
+1609930572 source:c:\users\simon\desktop\code blocks respository\cassebrique\raquette.cpp
+	"raquette.h"
+	<winuser.h>
+
+1609964787 source:c:\users\simon\desktop\code blocks respository\cassebrique\testapp.cpp
+
+1608912443 c:\users\simon\desktop\code blocks respository\cassebrique\doctest.h
+	<signal.h>
+	<iosfwd>
+	<cstddef>
+	<ostream>
+	<ciso646>
+	<type_traits>
+	"doctest_fwd.h"
+	<ctime>
+	<cmath>
+	<climits>
+	<math.h>
+	<new>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<limits>
+	<utility>
+	<fstream>
+	<sstream>
+	<iostream>
+	<algorithm>
+	<iomanip>
+	<vector>
+	<atomic>
+	<mutex>
+	<set>
+	<map>
+	<exception>
+	<stdexcept>
+	<csignal>
+	<cfloat>
+	<cctype>
+	<cstdint>
+	<sys/types.h>
+	<unistd.h>
+	<sys/sysctl.h>
+	<AfxWin.h>
+	<windows.h>
+	<Windows.h>
+	<io.h>
+	<sys/time.h>
+	<unistd.h>
+

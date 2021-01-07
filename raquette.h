@@ -21,8 +21,12 @@ public:
     */
     ~raquette();
     /**
-    * Methode qui change la position de la raquette en fonction des touches de l' utilisateur.
+    * Methode qui change la position de la raquette vers la gauche si l' utilisateur appui sur la fleche droite.
     */
-    void deplacer();
+    void deplacerGauche();
+    /**
+    * Methode qui change la position de la raquette vers la droite si l' utilisateur appui sur la fleche droite.
+    */
+    void deplacerDroite();
 };
 #endif // RAQUETTE_H

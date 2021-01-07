@@ -5,6 +5,7 @@
 #include "balle.h"
 #include "brique.h"
 #include "raquette.h"
+#include <vector>
 
 /**
 * Class abstraite d' affichage.
@@ -23,21 +24,33 @@ public:
     */
     virtual ~afficheJeu();
     /**
-    * Affiche le terrain en parametre, c-a-d l' espace du jeu et les murs.
+    * Affiche les murs du terrain en parametre.
     */
-    virtual void afficheTerrain(const terrain& t) const = 0;
+    virtual void afficherMurs(const terrain& t) const = 0;
     /**
     * Affiche la balle en parametre.
     */
-    virtual void afficheBalle(const balle& b) const = 0;
+    virtual void afficherBalle(const balle& b) const = 0;
     /**
     * Affiche le brique en parametre.
     */
-    virtual void afficheBrique(const brique& br) const = 0;
+    virtual void afficherBrique(const brique& br) const = 0;
     /**
     * Affiche la raquette en parametre.
     */
-    virtual void afficheRaquette(const raquette& raq) const = 0;
+    virtual void afficherRaquette(const raquette& raq) const = 0;
+    /**
+    * Initialise la fenetre dans laquelle on fera la representation graphique du jeu.
+    */
+    virtual void initFenetre(const terrain& t) const = 0;
+    /**
+    * Fermer la fenetre dans laquelle on fera la representation graphique du jeu.
+    */
+    virtual void fermerFenetre() const = 0;
+    /**
+    * Utilise les autres methodes pour afficher tous les objets du jeu.
+    */
+    virtual void affichage(const terrain& t, const balle& b, const std::vector<brique>& briques, const raquette& raq) const = 0;
 };
 
 #endif // AFFICHEJEU_H
